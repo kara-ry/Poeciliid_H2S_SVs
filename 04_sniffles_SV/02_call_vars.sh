@@ -10,10 +10,10 @@
 
 conda activate sniffles2
 
-sniffles --input bc1018_pmex_scaffold_sorted.bam --snf bc1018_pmex_scaffold_sorted_sniffles.snf --threads 8 --reference Pmex_NS.ragtag.scaffold.fasta
-sniffles --input bc1020_pmex_scaffold_sorted.bam --snf bc1020_pmex_scaffold_sorted_sniffles.snf --threads 8 --reference Pmex_NS.ragtag.scaffold.fasta
-sniffles --input bc2031_pmex_scaffold_sorted.bam --snf bc2031_pmex_scaffold_sorted_sniffles.snf --threads 8 --reference Pmex_NS.ragtag.scaffold.fasta
+sniffles --input Psulph.bam --snf Psulph.snf --threads 8 --reference Pmex_NS.ragtag.scaffold.fasta
+sniffles --input Pmex_S.bam --snf Pmex_S.snf --threads 8 --reference Pmex_NS.ragtag.scaffold.fasta
+sniffles --input Pmex_NS.bam --snf Pmex_NS.snf --threads 8 --reference Pmex_NS.ragtag.scaffold.fasta
 
-sniffles --input bc1018_pmex_scaffold_sorted_sniffles.snf bc1020_pmex_scaffold_sorted_sniffles.snf bc2031_pmex_scaffold_sorted_sniffles.snf \
+sniffles --input Psulph.snf Pmex_S.snf Pmex_NS.snf \
 --vcf Pmex_NS.ragtag.scaffold.multisample.hifi.vcf
 # python3 sniffles2_plots.py -i bc1018_reads_to_primary_sorted_sniffles.vcf -o bc1018_reads_to_primary_sorted_sniffles_plot
