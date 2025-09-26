@@ -7,7 +7,7 @@ This repository contains all scripts used to analyze data for the manuscript "Pa
 - SV identification with Sniffles (04)
 - Identification of highly differentiated regions (05)
 - Liftoff annotation (06)
-- Population level genotyping of structural variants
+- Population level genotyping of structural variants (07)
 
 Raw data used for this analysis can be found on NBCI under Bioproject: PRJNA984711
 
